@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import Card from './Card'
+import FadeIn from './FadeIn'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <FadeIn className='container'>
+      <Card className='bg-blue'>Card 01</Card>
+      <Card className='bg-red'>Card 02</Card>
+      <Card className='bg-green'>Card 03</Card>
+      <Card className='bg-yellow'>Card 04</Card>
+    </FadeIn>
+  )
 }
 
-export default App;
+export default App
